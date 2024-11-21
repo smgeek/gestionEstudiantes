@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes</title>
+    <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Estudiantes</h1>
+        <form id="fomulario">
+            <p>Ingrese nombre completo del estudiante: <input type="text" id="nombre"></p>
+            <p>Ingrese edad del estudiante: <input type="number" id="edad"></p>
+            <p>Ingrese materia: <input type="text" id="materia"></p>
+            <p>Ingrese nota1: <input type="number" id="nota1"></p>
+            <p>Ingrese nota2: <input type="number" id="nota2"></p>
+            <p>Ingrese nota3: <input type="number" id="nota3"></p>
+            <p><input type="button" class="btn btn-primary" value="Registrar" onclick="registrar()"></p>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h1>Menú Consultas</h1>
+        <div class="row justify-content-md-left">
+            <div class="col col-lg-3">
+                <p><input type="button" class="btn btn-info" value="Listar Estudiantes" onclick="listaEstudiante()"></p>
+            </div>
+            <div class="col col-lg-3">
+                <p><input type="button" class="btn btn-info" value="Rango de Edades" onclick="estudianteRangoEdad()"></p>
+            </div>
+            <div class="col col-lg-3">
+                <p><input type="button" class="btn btn-info" value="Promedio < 3" onclick="estudiantePromedioMenor3()"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="resultados"></div>
+
+    <script src="app.js"></script>
+    
+    
+</body>
+</html>
